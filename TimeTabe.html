@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>School TimeTable<!--Assignment1--></title>
+        <!-----------------------------CSS---------------------------------->
+      <style>
+          table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+          }
+          td{
+              background-color: aqua;
+              text-align: center;
+              border: 2px solid yellow;
+              font-size: 25px;  
+          }
+          h1{
+              text-align: center;
+              color: chartreuse;
+          }
+          .thead,.tfoot{
+            background-color: black;
+            text-align:center;
+            color: white;
+            font-size: 20px;
+          }
+          .days{
+              background-color: darkmagenta;
+              color: white;
+          }
+          .period{
+              background-color: red;
+              color: white;
+          }
+          #lunch{
+              background-color: darkorange;
+              font-size: 34px;
+              width: 15%;
+          }
+          #sunday{
+              background-color: gold;
+          }
+      </style>
+         <!--------------END CSS-------------->
+    </head>
+    <body>
+        <h1>Time Table</h1>
+        <table> 
+            <thead>
+                <td colspan="10" class="thead">TIME TABLE</td>  
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&DoubleDownArrow;Days / Periods &DoubleRightArrow;  </td>
+                    <td class="period">1</td>
+                    <td class="period">2</td>
+                    <td class="period">3</td>
+                    <td rowspan="7" id="lunch">&hearts;<br>B<br>R<br>E<br>A<br>K<br>&hearts;</td>
+                    <td class="period">4</td>
+                    <td class="period">5</td>
+                    <td class="period">6</td>
+               </tr> 
+            <tr>
+                <td class="days">Monday</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Hindi</td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral Science</td>
+            </tr>
+            <tr>
+                <td class="days">Tuesday</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Hindi</td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral Science</td>
+            </tr>
+            <tr>
+                <td class="days">Wednesday</td>
+                <td>Science</td>
+                <td>English</td>
+                <td rowspan="3">Hindi</td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral Science</td>
+            </tr>
+            <tr>
+                <td class="days">Thursday</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral Science</td>
+            </tr>
+            <tr>
+                <td class="days">Friday</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral Science</td>
+            </tr>
+            <tr>
+                <td class="days">Saturday</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Hindi</td>
+                <td colspan="3">Maths</td>
+            </tr>
+            <tr>
+                <td class="days">Sunday</td>
+                <td colspan="9" id="sunday">&dagger;Holiday Enjoy&dagger;</td>
+            </tr>
+        </tbody>
+            <tfoot><td colspan="10" class="tfoot">Time table for Class 8<sup>th</sup></td></tfoot>
+        </table>
+    </body>
+</html>
