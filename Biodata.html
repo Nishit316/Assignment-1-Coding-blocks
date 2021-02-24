@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Biodata Form</title>
+        <style>
+           #School{
+               width: 45%;
+               float: left;
+           }
+           #Graduation{
+               width: 45%;
+               float: left;
+           }
+        </style>
+    </head>
+    <body>
+        <h1>MY Bio Data</h1>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="First name">FirstName:</label>
+            <input type="text" placeholder="First Name" id="First name">
+            <label for="Last name">LastName:</label>
+            <input type="text" placeholder="Last Name" id="Last name"><br><br>
+            <label for="Gender"></label>
+            Male: <input type="radio" name="Gender"> Female:<input type="radio" name="Gender"> other: <input type="radio" name="Gender"><br><br>
+            <label for="email">E-Mail:</label>
+            <input type="email" placeholder="Enter your email" id="email"><br><br>
+            <label for="mobile no">Phone:</label>
+            <input type="number" placeholder="+91" maxlength="10" id="mobile no"><br><br>
+            <label for="address">Address:</label>
+            <input type="address" placeholder="Enter your address" id="address"><br><br>
+            <label for="height">Height:</label>
+            <input type="text" placeholder="Height in Feet" id="height"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <fieldset id="Graduation">
+            <legend>Graduation</legend>
+            <label for="college">University:</label>
+            <input type="text" placeholder="Enter University Name" id="college"><br><br>
+            <label for="Stream">Stream:</label>
+            <select>
+                    <option id="stram">Stream</option>
+                    <option id="stram">CSE</option>
+                    <option id="stram">ECE</option>
+                    <option id="stram">ME</option>
+                    <option id="stram">Civil</option>
+                </select><br><br>
+            <label for="grade">CGPA:</label>
+            <input type="number" placeholder="Enter your CGPA" id="grade"><br><br>
+            <label for="Degree"></label>
+             <input type="checkbox">If Graduated<br>
+              Degree:<input type="file">
+        </fieldset>
+        <fieldset id="School">
+            <legend>School</legend>
+        <label for="School Name">School Name:</label>
+        <input type="text" placeholder="Enter School Name" id="School Name"><br><br>
+        <label for="Stream">Stream:</label>
+            <select>
+                <option id="stream">Stream</option>
+                <option id="stream">Non-Medical</option>
+                <option id="stream">Medical</option>
+                <option id="stream">Commerce</option>
+                <option id="stream">Arts</option>
+            </select><br><br>
+        <label for="percentage">Percentage:</label>
+        <input type="number" placeholder="Enter your percentage" id="percentage"><br><br>
+        <label for="marksheet">Marksheet:</label>
+        <input type="file"><br><br>
+    </fieldset>
+        </fieldset><br>
+        <input type="submit">
+    </body>
+</html>
